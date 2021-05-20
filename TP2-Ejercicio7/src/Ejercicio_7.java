@@ -38,27 +38,31 @@ public class Ejercicio_7 {
 			System.out.println("Ingrese remuneracion pretendida");
 			remuneracion = scan.nextDouble();
 	
-			
-			if ((edad<18) || (edad>36) && (experiencia<=2) && (remuneracion>=5000))
-				System.err.println("RECHAZADO, usted no cumple con los requisitos solicitados");
-			
-				 if((experiencia<3) && (remuneracion<=50000)) {
-							System.out.println("ACEPTADO, usted cumple con todos los requisitos para el empleo");
-				 			}
-				 	else   if((edad > 32 && edad <= 36) && (experiencia>=3 || experiencia <6)) 
-							System.err.println("Usted cumple en parte con los requisitos, es Aceptado en forma condicional");
-				
-				
-				 	else  if (edad >=32 && experiencia >=6) 
-				 			System.out.println("ACEPTADO, usted cumple con todos los requisitos para el empleo");
-			
-				 	else 
-				 		System.out.println("ACEPTADO, usted cumple con todos los requisitos para el empleo");
-				 }
-			
-			
-					
+			if (edad>=18 && edad <=35) {
+				if (edad >32 && (experiencia >6))
+					System.out.println("Su solicitud fue aceptada");
+				else if (experiencia <3 && (remuneracion <5000))
+					System.out.println("Su solicitud fue aceptada");
+				else if ((edad>= 32 && (experiencia<6)&& (experiencia>=3)))
+						System.out.println("Su solicitud fue aceptada de manera condicional");
+				else if ((edad >=32 && edad <=35)&& (experiencia>=6))
+					System.out.println("Su solicitud fue aceptada");
+				else if (edad <32)
+					System.out.println("Su solicitud fue aceptada");
+				else System.out.println("SU solicitud fue rechazada");
 			}
+			else System.out.println("Su solicitud fue rechazada");
+			}
+	
+			
+			
+			
+			
+			
+			
+	}
+
+			
 		
 			
 					
